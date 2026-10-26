@@ -26,7 +26,7 @@ export function HeroSection() {
               for lovable experiences
             </h1>
           </Reveal>
-          <Reveal delay={0.1} className="max-w-[630px] px-6">
+          <Reveal delay={0.1} className="max-w-[280px] px-6 sm:max-w-[630px]">
             <p className="text-balance text-sm font-medium leading-[1.2] tracking-[0.01em] text-black">
               I&rsquo;m Young, a web/app UX/UI designer based in Seoul. I design
               highly interactive interfaces rooted in motion, precision, and a
