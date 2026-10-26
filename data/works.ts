@@ -56,12 +56,12 @@ export const works: Work[] = [
     id: "synce",
     date: "2025.03.-05.",
     title: {
-      ko: "Synce - 성형 후 헬스케어 어플 전체 디자인",
-      en: "Synce — Full App Design for Post-Surgery Healthcare",
+      ko: "Synce - 성형 후 헬스케어 앱 전체 페이지",
+      en: "Synce — Full Page Design for Post-Surgery Healthcare",
     },
     description: {
-      ko: "창업 프로젝트, 브랜딩·앱 단독 디자인",
-      en: "Startup project — solo branding and app design",
+      ko: "창업 프로젝트, 브랜딩·앱 단독 디자인, UT·로컬라이제이션",
+      en: "Startup project — solo branding and app design, UT and localization",
     },
     tags: {
       ko: ["#Product Design", "#App"],
@@ -125,6 +125,23 @@ export const works: Work[] = [
     media: { type: "video", src: "/videos/06.mp4" },
   },
   {
+    id: "habit-app",
+    date: "2023.02.",
+    title: {
+      ko: "021 - 습관 형성 앱 메인 페이지",
+      en: "021 — Habit-Forming App Main Page",
+    },
+    description: {
+      ko: "앱 단독 디자인",
+      en: "Solo app design",
+    },
+    tags: {
+      ko: ["#Product Design", "#App"],
+      en: ["#Product Design", "#App"],
+    },
+    media: { type: "video", src: "/videos/07.mp4" },
+  },
+  {
     id: "flea-market",
     date: "2026.07.-09.",
     team: true,
@@ -140,7 +157,7 @@ export const works: Work[] = [
       ko: ["#Key Visual", "#Banner"],
       en: ["#Key Visual", "#Banner"],
     },
-    media: { type: "video", src: "/videos/07.mp4" },
+    media: { type: "video", src: "/videos/08.mp4" },
   },
   {
     id: "store-discovery",
@@ -158,6 +175,6 @@ export const works: Work[] = [
       ko: ["#Banner", "#SNS", "#OOH"],
       en: ["#Banner", "#SNS", "#OOH"],
     },
-    media: { type: "video", src: "/videos/08.mp4" },
+    media: { type: "video", src: "/videos/09.mp4" },
   },
 ];
