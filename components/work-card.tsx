@@ -16,6 +16,9 @@ export function WorkCard({ work }: { work: Work }) {
   const [flash, setFlash] = React.useState<"play" | "pause" | null>(null);
   const flashTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
   const videoRef = React.useRef<HTMLVideoElement>(null);
+  // Tracks an explicit user pause so scroll-driven autoplay (below) never
+  // overrides a tap-to-pause once the card scrolls back into view.
+  const userPausedRef = React.useRef(false);
 
   React.useEffect(() => {
     return () => {
@@ -26,6 +29,28 @@ export function WorkCard({ work }: { work: Work }) {
   const hasToggle = "pc" in work.media;
   const media = "pc" in work.media ? work.media[device] : work.media;
   const isVideo = media.type === "video";
+
+  // Mobile browsers throttle or refuse to autoplay many offscreen <video>
+  // elements at once, so instead of relying on the `autoplay` attribute for
+  // every card up front, each video only plays while it's actually in
+  // view — which also keeps 9 cards' worth of video from all decoding at
+  // the same time.
+  React.useEffect(() => {
+    const video = videoRef.current;
+    if (!video || !isVideo) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          if (!userPausedRef.current) video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.4 },
+    );
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, [media.src, isVideo]);
 
   // letter-spacing in em resolves against each element's own font-size,
   // so the -3% tracking must be set per text node, not inherited from a
@@ -44,9 +69,11 @@ export function WorkCard({ work }: { work: Work }) {
     if (!video) return;
     if (video.paused) {
       video.play();
+      userPausedRef.current = false;
       setFlash("play");
     } else {
       video.pause();
+      userPausedRef.current = true;
       setFlash("pause");
     }
     if (flashTimer.current) clearTimeout(flashTimer.current);
