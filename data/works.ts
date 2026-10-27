@@ -26,8 +26,8 @@ export const works: Work[] = [
       en: "Solo interaction and web design",
     },
     tags: {
-      ko: ["#Interaction", "#AI Motion"],
-      en: ["#Interaction", "#AI Motion"],
+      ko: ["#Interaction", "#AI Motion", "#Web"],
+      en: ["#Interaction", "#AI Motion", "#Web"],
     },
     media: { type: "video", src: "/videos/01.mp4" },
   },
@@ -76,7 +76,7 @@ export const works: Work[] = [
     date: "2026.10.-",
     team: true,
     title: {
-      ko: "네이버 예약 - 엄브렐러 캠페인 페이지",
+      ko: "네이버예약 - 엄브렐러 캠페인 페이지",
       en: "Naver Reservations — Umbrella Campaign Page",
     },
     description: {
@@ -108,6 +108,23 @@ export const works: Work[] = [
     media: { type: "video", src: "/videos/05.mp4" },
   },
   {
+    id: "golden-chestnut-money",
+    date: "2023.07.",
+    title: {
+      ko: "네이버페이 - 머니카드 황금알밤 이벤트 페이지",
+      en: "Naver Pay — Money Card Golden Chestnut Event Page",
+    },
+    description: {
+      ko: "인터랙션·웹 단독 디자인",
+      en: "Solo interaction and web design",
+    },
+    tags: {
+      ko: ["#Interaction", "#AI Motion", "#Web"],
+      en: ["#Interaction", "#AI Motion", "#Web"],
+    },
+    media: { type: "video", src: "/videos/06.mp4" },
+  },
+  {
     id: "face-sign",
     date: "2026.01.",
     title: {
@@ -122,7 +139,7 @@ export const works: Work[] = [
       ko: ["#Interaction", "#Web"],
       en: ["#Interaction", "#Web"],
     },
-    media: { type: "video", src: "/videos/06.mp4" },
+    media: { type: "video", src: "/videos/07.mp4" },
   },
   {
     id: "habit-app",
@@ -139,14 +156,14 @@ export const works: Work[] = [
       ko: ["#Product Design", "#App"],
       en: ["#Product Design", "#App"],
     },
-    media: { type: "video", src: "/videos/07.mp4" },
+    media: { type: "video", src: "/videos/08.mp4" },
   },
   {
     id: "flea-market",
     date: "2026.07.-09.",
     team: true,
     title: {
-      ko: "N 플리마켓 - 온라인 기획전 키비주얼",
+      ko: "N플리마켓 - 온라인 기획전 키비주얼",
       en: "N Flea Market — Online Campaign Key Visuals",
     },
     description: {
@@ -157,14 +174,14 @@ export const works: Work[] = [
       ko: ["#Key Visual", "#Banner"],
       en: ["#Key Visual", "#Banner"],
     },
-    media: { type: "video", src: "/videos/08.mp4" },
+    media: { type: "video", src: "/videos/09.mp4" },
   },
   {
     id: "store-discovery",
     date: "2026.05.-06.",
     team: true,
     title: {
-      ko: "네이버 플러스 스토어 - 스토어의 발견 캠페인",
+      ko: "네이버플러스 스토어 - 스토어의 발견 캠페인",
       en: "Naver Plus Store — Store Discovery Campaign",
     },
     description: {
@@ -175,6 +192,6 @@ export const works: Work[] = [
       ko: ["#Banner", "#SNS", "#OOH"],
       en: ["#Banner", "#SNS", "#OOH"],
     },
-    media: { type: "video", src: "/videos/09.mp4" },
+    media: { type: "video", src: "/videos/10.mp4" },
   },
 ];

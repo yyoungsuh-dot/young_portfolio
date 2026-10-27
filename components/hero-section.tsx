@@ -38,7 +38,7 @@ export function HeroSection() {
             I&rsquo;m Young, a web/app UX/UI designer based in Seoul. I design
             highly interactive interfaces rooted in motion, precision, and a
             sense of touch. I research, prototype, and blend design to build
-            memorable and lovable web and app-experiences.
+            memorable and lovable web and app experiences.
           </p>
         </Reveal>
       </TiltedGridHero>
