@@ -53,6 +53,27 @@ export const works: Work[] = [
     },
   },
   {
+    id: "brand-intimacy",
+    date: "2025.07.-08.",
+    team: true,
+    title: {
+      ko: "Brand Intimacy - 글로벌 브랜드 분석 페이지",
+      en: "Brand Intimacy — Global Brand Analysis Page",
+    },
+    description: {
+      ko: "키 비주얼·모션·데이터 비주얼라이제이션 담당",
+      en: "Led key visual, motion, and data visualization",
+    },
+    tags: {
+      ko: ["#Key Visual", "#AI Image", "#AI Motion", "#Web"],
+      en: ["#Key Visual", "#AI Image", "#AI Motion", "#Web"],
+    },
+    media: {
+      pc: { type: "video", src: "/videos/03-pc.mp4" },
+      mobile: { type: "video", src: "/videos/03-mobile.mp4" },
+    },
+  },
+  {
     id: "synce",
     date: "2025.03.-05.",
     title: {
@@ -69,7 +90,7 @@ export const works: Work[] = [
     },
     // Only one video was provided for Synce (no separate mobile cut yet),
     // so the PC/Mobile toggle is dropped here until a second clip arrives.
-    media: { type: "video", src: "/videos/03.mp4" },
+    media: { type: "video", src: "/videos/04.mp4" },
   },
   {
     id: "umbrella-campaign",
@@ -87,7 +108,7 @@ export const works: Work[] = [
       ko: ["#Key Visual", "#Web"],
       en: ["#Key Visual", "#Web"],
     },
-    media: { type: "video", src: "/videos/04.mp4" },
+    media: { type: "video", src: "/videos/05.mp4" },
   },
   {
     id: "maejeom-running",
@@ -105,7 +126,7 @@ export const works: Work[] = [
       ko: ["#Interaction", "#Motion"],
       en: ["#Interaction", "#Motion"],
     },
-    media: { type: "video", src: "/videos/05.mp4" },
+    media: { type: "video", src: "/videos/06.mp4" },
   },
   {
     id: "golden-chestnut-money",
@@ -122,7 +143,7 @@ export const works: Work[] = [
       ko: ["#Interaction", "#AI Motion", "#Web"],
       en: ["#Interaction", "#AI Motion", "#Web"],
     },
-    media: { type: "video", src: "/videos/06.mp4" },
+    media: { type: "video", src: "/videos/07.mp4" },
   },
   {
     id: "face-sign",
@@ -139,7 +160,7 @@ export const works: Work[] = [
       ko: ["#Interaction", "#Web"],
       en: ["#Interaction", "#Web"],
     },
-    media: { type: "video", src: "/videos/07.mp4" },
+    media: { type: "video", src: "/videos/08.mp4" },
   },
   {
     id: "habit-app",
@@ -156,7 +177,7 @@ export const works: Work[] = [
       ko: ["#Product Design", "#App"],
       en: ["#Product Design", "#App"],
     },
-    media: { type: "video", src: "/videos/08.mp4" },
+    media: { type: "video", src: "/videos/09.mp4" },
   },
   {
     id: "flea-market",
@@ -174,7 +195,7 @@ export const works: Work[] = [
       ko: ["#Key Visual", "#Banner"],
       en: ["#Key Visual", "#Banner"],
     },
-    media: { type: "video", src: "/videos/09.mp4" },
+    media: { type: "video", src: "/videos/10.mp4" },
   },
   {
     id: "store-discovery",
@@ -192,6 +213,6 @@ export const works: Work[] = [
       ko: ["#Banner", "#SNS", "#OOH"],
       en: ["#Banner", "#SNS", "#OOH"],
     },
-    media: { type: "video", src: "/videos/10.mp4" },
+    media: { type: "video", src: "/videos/11.mp4" },
   },
 ];
